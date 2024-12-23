@@ -1,0 +1,65 @@
+!{if $header}!{include file="$header"}!{/if}
+<body id="!{$content_array.config.name}!{$content_config.name}">
+
+<div id="landing_wrap">
+	<div id="inner_wrap">
+		
+		<div id="head">
+		<div id="top_line">
+		<div id="login">
+				<a href="/?page=my_account" class="login_ac" alt="Access Your Account">My Account</a>
+				<a href="http://cn.lazarusgroup.com/login.php" class="login" alt="Login">Login</a>
+			</div>
+			<p><span class="tag">Nature's Food Delivered</span>&nbsp;&nbsp;&nbsp;<span class="bold_cond">913-475-8004</span></p>
+			
+		</div>
+			<a href="/?page=home_landing" class="header_img" title="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"><img src="/images/logo_top.png" border="0" alt="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"></a>
+		<div id="ad_div">
+		</div>
+			<div id="nav">
+				!{include file="_nav.tpl"}
+			</div>
+		</div><!-- close head -->
+		
+		<div id="content-wrap">
+			<!--<div id="left_nav">
+				<ul id="navlist">
+				<li><a href="/catalog.php?category=TUBING"  class="tubing" alt="tubing" title="TCD Parts tubing">Tubing</a></li>
+				<li><a href="/catalog.php?category=CHEMICAL DISPENSERS AND PROPORTIONERS" class="dispensers" title="TCD Parts Chemical Dispensers">Chemical Dispensers</a></li>
+				<li><a href="/catalog.php?category=DISHMACHINE PARTS" class="dishmachine" title="TCD Parts Dishmachine Parts">Dishmachine Parts</a></li>
+				<li><a href="/catalog.php?category=FITTINGS AND CONNECTORS" class="fittings" title="TCD Parts Fittings & Connectors">Fittings & Connectors</a></li>
+				<li><a href="/catalog.php?category=VALVES" class="valves" title="TCD Parts Valves">Valves</a></li>
+				<li><a href="/catalog.php?category=ELECTRICAL SWITCHES" class="electrical" title="TCD Parts Electrical Switches">Electrical Switches</a></li>
+				<li><a href="/catalog.php?category=KITCHEN EQUIPMENT" class="kitchen" title="TCD Parts Kitchen Equipment">Kitchen Equipment</a></li>
+				<li><a href="/catalog.php?category=RACKS AND DOLLIES" class="racks" title="TCD Parts Racks & Dollies">Racks & Dollies</a></li>
+				<li><a href="/catalog.php?category=TESTING AND SAFETY" class="testing" title="TCD Parts Testing & Safety">Testing & Safety</a></li>
+				</ul>
+
+			</div>-->
+				
+			<div id="content">	
+			
+					!{if $page_type eq 'db'}
+					!{$page_content|stripslashes}
+					!{else}
+					!{if $page_content}!{include file="$page_content"}!{/if}
+					!{/if}
+					<BR>
+						
+
+					
+			</div><!-- close content -->
+			
+				
+		</div>
+	<br clear="all">
+	<div id="footer">
+		!{if $footer}!{include file="$footer"}!{/if} 
+	</div><!-- close foot -->
+	</div> <!--close inner wrap-->
+
+ 	
+ 	</div><!-- close wrap -->
+
+</body>
+</html>

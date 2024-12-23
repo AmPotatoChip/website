@@ -1,0 +1,77 @@
+!{if $header}!{include file="$header"}!{/if}
+<body id="!{$content_array.config.name}!{$content_config.name}">
+
+<div id="wrap">
+	<div id="inner_wrap">
+		
+		<div id="head">
+		<div id="top_line">
+
+			<p><span class="tag">We Make Websites</span>&nbsp;&nbsp;&nbsp;<span class="bold_cond">816.931.5525</span></p>
+			
+		</div>
+			<a href="/?page=home_landing" class="header_img" title="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"><img src="/images/logo_top.png" border="0" alt="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"></a>
+		<div id="inner_nav">
+			<ul>
+				<li><a href="/?page=conveniently_free" class="inner_free" alt="" title="conveniently natural">Item 1</a></li>
+				<li><a href="/?page=conveniently_delicious" class="inner_delish" alt="" title="conveniently natural">Item 1</a></li>
+				<li><a href="/?page=conveniently_healthy" class="inner_healthy" title="conveniently natural">Item 2</a></li>
+				<li><a href="/?page=signup" class="inner_order" title="conveniently natural">Item 3</a></li>
+				
+			</ul>
+		</div>
+			<div id="nav">
+				!{include file="_nav.tpl"}
+			</div>
+		</div><!-- close head -->
+		
+		<div id="content-wrap">
+			<div id="left_nav">
+				<ul id="navlist">
+				<li><a href="/?page=menu_page"><h2>Menu For the Week of 9/26/2011</h2></a></li>
+				<li><a href="/?page=menu_page"  class="menu" alt="" title="conveniently natural">Broccoli and Swiss Chard in Cilantro Cream Sauce</a></li>
+				<li><a href="/?page=menu_page" class="menu" title="conveniently natural">Eggplant Parmesan</a></li>
+				<li><a href="/?page=menu_page" class="menu" title="conveniently natural">Wild Mushroom Penne</a></li>
+				<li><a href="/?page=menu_page" class="menu" title="conveniently natural">Faux Chicken Salad</a></li>
+				<li><a href="/?page=menu_page" class="menu" title="conveniently natural">Italian Lentil Stew</a></li>
+				<li><a href="/?page=menu_page" class="menu" title="conveniently natural">Roasted Vegetable Risotto</a></li>
+				<li><a href="/?page=menu_page" class="menu" title="conveniently natural">Cheesy Potato and Cauliflower Soup</a></li>
+				<li><a href="/?page=menu_page" class="menu" title="conveniently natural">Mediterranean Salad</a></li>
+				<li><a href="/?page=menu_page" class="menu" title="conveniently natural">Tiramisu</a></li>
+				<br />
+				<li><a href="/?page=how_we_cook" class="inner" title="How We Cook"><img src="/images/cook_inner.jpg">.</a></li>
+				<li><a href="/?page=tour_our_kitchen" class="inner" title="Tour Our Kitchen"><img src="/images/tour_inner.jpg">.</a></li>
+				</ul>
+				<br><p style="font-size:80%;">3711 Southwest Trafficway Kansas City, MO 64111</p><br>
+<h1 style="padding-left: 0px;">913-475-8004</h1><br>
+<p><a style="font-size:80%;" href="mailto:info@convenientlynatural.com">info@convenientlynatural.com</a></p>
+<br>
+<br>
+			</div>
+				
+			<div id="content_main">	
+			
+					!{if $page_type eq 'db'}
+					!{$page_content|stripslashes}
+					!{else}
+					!{if $page_content}!{include file="$page_content"}!{/if}
+					!{/if}
+					<BR>
+						
+
+					
+			</div><!-- close content -->
+			
+				
+		</div>
+	<br clear="all">
+
+	</div> <!--close inner wrap-->
+
+ 		<div id="footer">
+		!{if $footer}!{include file="$footer"}!{/if} 
+	</div><!-- close foot -->
+ 	</div><!-- close wrap -->
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+﻿/*
+ Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
+ For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+CKEDITOR.addTemplates("default",{imagesPath:CKEDITOR.getUrl(CKEDITOR.plugins.getPath("templates")+"templates/images/"),templates:[{title:"Teaching Artist",image:"tatemplate1.gif",description:"image, text 2 coloumn;",html:'<div class="imagetext"><img src="/userfiles/image/site/teaching-artist-200-place-hold.png" width="200" height="200" /><div class="imagetextDescription"><h4>Teaching Artist Name</h4><p>Small Teaching Artist Bio</p></div></div>'},{title:"Teaching Artist Bio",image:"tatemplatebio.gif",description:"image next to text;",html:'<div id="tafull"><div class="taphoto"><img src="/userfiles/image/site/teaching-artist-200-place-hold.png"  /></div><div class="tabio"><h4 >HEADLINE</h4><p>STORY</p></div></div>'}]});

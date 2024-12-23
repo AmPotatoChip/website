@@ -1,0 +1,70 @@
+!{if $header}!{include file="$header"}!{/if}
+<body id="!{$content_array.config.name}!{$content_config.name}">
+
+<div id="wrap">
+	<div id="inner_wrap">
+		
+		<div id="head">
+		<div id="top_line">
+		<div id="login">
+				<a href="/?page=my_account" class="login_ac" alt="Access Your Account">My Account</a>
+				<a href="http://cn.lazarusgroup.com/login.php" class="login" alt="Login">Login</a>
+			</div>
+			<p><span class="tag">Nature's Food Delivered</span>&nbsp;&nbsp;&nbsp;<span class="bold_cond">913-475-8004</span></p>
+			
+		</div>
+			<a href="/?page=home_landing" class="header_img" title="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"><img src="/images/logo_top.png" border="0" alt="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"></a>
+		<div id="inner_nav">
+			<ul>
+				<li><a href="/?page=conveniently_free" class="inner_free" alt="" title="conveniently natural">Item 1</a></li>
+				<li><a href="/?page=conveniently_delicious" class="inner_delish" alt="" title="conveniently natural">Item 1</a></li>
+				<li><a href="/?page=conveniently_healthy" class="inner_healthy" title="conveniently natural">Item 2</a></li>
+				<li><a href="#" class="inner_order" title="conveniently natural">Item 3</a></li>
+				
+			</ul>
+		</div>
+			<div id="nav">
+				!{include file="_nav.tpl"}
+			</div>
+		</div><!-- close head -->
+		
+		<div id="content-wrap">
+			<div id="left_nav">
+				<ul id="navlist">
+				<li><h2>Menu Head</h2></li>
+				<li><a href="#"  class="" alt="" title="conveniently natural">Item 1</a></li>
+				<li><a href="#" class="" title="conveniently natural">Item 2</a></li>
+				<li><a href="#" class="" title="conveniently natural">Item 3</a></li>
+				<li><a href="#" class="" title="conveniently natural">Item 4</a></li>
+				<li><a href="#" class=" title="conveniently natural">Item 5</a></li>
+				<li><a href="#" class="" title="conveniently natural">Item 6</a></li>
+				</ul>
+
+			</div>
+				
+			<div id="content_main">	
+			
+					!{if $page_type eq 'db'}
+					!{$page_content|stripslashes}
+					!{else}
+					!{if $page_content}!{include file="$page_content"}!{/if}
+					!{/if}
+					<BR>
+						
+
+					
+			</div><!-- close content -->
+			
+				
+		</div>
+	<br clear="all">
+	<div id="footer">
+		!{if $footer}!{include file="$footer"}!{/if} 
+	</div><!-- close foot -->
+	</div> <!--close inner wrap-->
+
+ 	
+ 	</div><!-- close wrap -->
+
+</body>
+</html>
