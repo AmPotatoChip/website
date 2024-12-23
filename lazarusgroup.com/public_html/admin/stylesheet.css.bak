@@ -1,0 +1,486 @@
+body {
+margin:10 10 10 10;
+font-family:verdana,arial;
+}
+
+input,textarea {
+font-family:verdana,arial;
+font-size:12px;
+}
+
+#header {
+border:2px dotted #CFCFCF;
+background-color:#272E4F;
+color:#ffffff;
+}
+
+h2 {
+letter-spacing: 7px;
+border-bottom:1px dashed #272E4F;
+color:#272E4F;
+}
+
+#display {
+border:1px solid #272E4F;
+}
+
+#display thead {
+background-color:#272E4F;
+color:#FFFFFF;
+font-weight:bold;
+}
+
+#display a {
+color:#CC0000;
+text-decoration:none;
+font-weight:bold;
+}
+
+#display .link {
+color:#CC0000;
+text-decoration:none;
+font-weight:normal;
+}
+
+#display .link:hover {
+text-decoration:underline;
+}
+
+#display tbody {
+font-size:12px;
+}
+
+#meddisplay {
+border:1px solid #272E4F;
+}
+
+#meddisplay thead {
+background-color:#272E4F;
+color:#FFFFFF;
+font-weight:bold;
+font-size: 11px;
+}
+
+#meddisplay a {
+color:#CC0000;
+text-decoration:none;
+font-weight:bold;
+}
+
+#meddisplay .link {
+color:#CC0000;
+text-decoration:none;
+font-weight:normal;
+}
+
+#meddisplay .link:hover {
+text-decoration:underline;
+}
+
+#meddisplay tbody {
+font-size:12px;
+}
+#form {
+border:1px solid #272E4F;
+}
+
+#form thead {
+background-color:#272E4F;
+color:#FFFFFF;
+font-weight:bold;
+}
+
+#form tbody {
+font-size:12px;
+}
+
+#form tfoot {
+background-color:#272E4F;
+}
+
+table #nav td {
+background-color:#fff;
+font-size:12px;
+padding: 5 5 5 5px;
+border:1px dashed #272E4F;
+-moz-border-radius:5px;
+}
+
+#nav a {text-decoration:none;
+color:#272E4F;
+float: left;
+}
+
+table #nav td:hover {
+background-color:#EFB3B5;
+font-size:12px;
+padding: 5 5 5 5px;
+}
+
+#error {
+border:1px dashed #CC0000;
+} 
+
+#error thead {
+background-color:#CC0000;
+}
+
+#error thead td {
+color:#FFFFFF;
+font-weight:bold;
+font-size:12px;
+padding:3px;
+}
+
+#error tbody td {
+color:#CC0000;
+font-size:12px;
+padding:5px;
+}
+
+.link {
+color:#CC0000;
+font-weight:bold;
+font-size:12px;
+text-decoration:none;
+}
+
+.link:hover {
+text-decoration:underline;
+}
+
+.link_visit {
+color:#0000CC;
+font-weight:bold;
+font-size:12px;
+text-decoration:none;
+}
+
+#right {
+text-align:right;
+font-weight:bold;
+}
+
+#red {
+color:#CC0000;
+}
+
+#media {
+border:1px dashed #CC0000;
+padding:3px;
+background-color:#EFB3B5;
+}
+
+#media:hover {
+background-color:#A7ABBF;
+}
+
+#media a {
+color:#CC0000;
+font-size:12px;
+text-decoration:none;
+}
+
+#media a:hover {
+color:#CC0000;
+font-size:12px;
+text-decoration:none;
+}
+
+#info_text {font-size:10px; 
+font-weight:bold; 
+color:#6F6F6F;
+}
+
+#red {font-color:#CC0000;
+font-weight:bold;
+}
+
+#media_content td {
+font-size:10px;
+}
+
+.more_info td {
+background-color:#FFFFDF;
+font-size:12px;
+}
+
+.scroll {
+overflow-y:auto;
+overflow-x:hidden;
+height:250px;
+}
+
+#namedropper {
+font-size:10px;
+color:#272E4F;
+}
+
+.namedropperh2 {
+font-size:12px;
+font-weight:bold;
+color:#272E4F;
+border-bottom:1px dashed #272E4F;
+}
+
+#content_help {
+background-color:#FEFFBF;
+font-size:12px;
+border:1px dashed #CECF5A;
+padding:2px;
+}
+
+#tabulated {}
+
+#tabulated thead td {
+font-size:12px;
+font-weight:bold;
+}
+
+.tab_on {
+border-left:1px solid #000000;
+border-top:1px solid #000000;
+border-right:1px solid #000000;
+text-align:center;
+color:#CC0000;
+}
+
+.tab_off{
+border-bottom:1px solid #000000;
+text-align:center;
+cursor:pointer;
+}
+
+/*#link a{
+text-decoration:none;
+color:#fff;
+font-size:12px;
+border: 2px #000 solid;
+background: url(/images/buttonbg.gif);
+-moz-border-radius:5px;
+padding: 7px;
+}*/
+
+#link a{
+text-decoration:none;
+color:#000;
+font-size:12px;
+}
+
+/*#link a:hover{
+text-decoration:none;
+background: url(/images/buttongbgon.gif);
+background-color: #cc0000;
+}*/
+
+#link a:hover{
+text-decoration:underline;
+}
+
+#keys{
+padding:0 0 20 0;
+}
+
+#keys a{
+background-color:#CC0000;
+padding:0 2 0 2px;
+text-decoration:none;
+color:#FFFFFF;
+border:1px solid #FFFFFF;
+font-weight:bold;
+}
+
+#scroll{
+overflow-y:auto;
+overflow-x:hidden;
+}
+
+#scroll table{
+height:250px;
+}
+
+#pagination_nav {
+padding:5 0 5 5;
+font-size:12px;
+font-weight:bold;
+}
+
+#pagination_nav a{
+text-decoration:none;
+}
+
+#note {
+font-family:verdana,arial;
+border:1px solid #272E4F;
+width: 500px;
+}
+
+#note tbody .header{
+background-color:#272E4F;
+color:#FFFFFF;
+font-weight:bold;
+width: 500px;
+}
+
+#note tbody .note{
+background-color:#FFFFDF;
+width: 500px;
+}
+
+#address{
+border:1px solid #272E4F;
+}
+
+#address thead td{
+background-color:#272E4F;
+font-size:12px;
+font-weight:bold;
+}
+
+#address tbody td{
+background-color:FFFFDF;
+}
+
+#address tfoot td{
+background-color:#FFFFDF;
+font-size:12px;
+}
+
+#calendar_name {
+width:700px;
+background-color:#272E4F;
+color:#FFF;
+padding-top:2px;
+padding-bottom:2px;
+text-align:center;
+font-weight:bold;
+}
+
+#calendar_head {
+width:100px;
+float:left;
+font-size:10px;
+text-align:center;
+background-color:#DFE5FF;
+padding-top:2px;
+padding-bottom:2px;
+}
+
+#calendar_content {
+border:1px solid #ECECEC;
+width:98px;
+float:left;
+font-size:10px;
+vertical-align:top;
+height:100px;
+}
+
+#no_content{
+width:100px;
+float:left;
+font-size:10px;
+vertical-align:top;
+height:100px;
+}
+
+#calendar_frame{
+padding:2px;
+border:1px solid #272E4F;
+width:700
+}
+
+#calendar_list{
+width:100%;
+font-size:12px;
+vertical-align:top;
+}
+
+#calendar_nav{
+padding-bottom:10px;
+}
+
+.adminheader {
+background-color:#272E4F;
+padding:1 2 1 2;
+font-size:12px;
+font-weight:bold;
+color:#FFFFFF;
+}
+
+/* DROP DOWN MENU */
+#navbar {
+background-image: url(/images/buttonbg.gif);
+padding:5 5 5 10;
+font-family: arial, verdana, sans-serif;
+font-size: 13px;
+color: #fff;
+height: 17px;
+}
+
+ul#navlist { 
+font-family: arial, verdana, sans-serif;
+font-size: 13px;
+color: #fff;
+}
+
+ul#navlist a {
+text-decoration: none;
+}
+
+ul#navlist, ul#navlist ul, ul#navlist li {
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+ul#navlist li { 
+float: left; 
+}
+
+ul#navlist li a {
+color: #ffffff;
+padding: 3px;
+
+padding:10 10 5 10;
+}
+
+ul#navlist li a:hover {
+color: #000;
+background-color: #fff;
+}
+
+ul#navlist li a:active {
+color: #fff;
+background-color: #000;
+}
+
+ul#subnavlist { 
+display: none;
+background-color: #000;
+}
+
+ul#subnavlist li { 
+float: none; 
+}
+
+ul#subnavlist li a {
+padding: 0px;
+margin: 0px;
+}
+
+ul#navlist li:hover ul#subnavlist {
+display: block;
+position: absolute;
+font-size: 11px;
+padding-top: 5px;
+}
+
+ul#navlist li:hover ul#subnavlist li a {
+display: block;
+width: 200px;
+padding: 6px;
+}
+
+ul#navlist li:hover ul#subnavlist li a:before { 
+content: " Chapter "; 
+}

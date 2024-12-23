@@ -1,0 +1,60 @@
+!{if $header}!{include file="$header"}!{/if}
+<body id="!{$content_array.config.name}!{$content_config.name}">
+
+<div id="landing_wrap">
+	<div id="inner_wrap">
+		<div id="head">
+			<a href="/?page=home" class="header_img" title="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"><img src="/images/logo_top.jpg" border="0" alt="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"></a>
+		<div id="nav">
+				!{include file="_nav.tpl"}
+			</div>
+		</div><!-- close head -->
+		
+	
+		<div id="content-wrap">
+		<div id="left_nav">
+		<a class="catalog" href="/?page=order_catalog">:</a>
+		<ul id="navlist">
+				<li><a href="/?page=tubing"  class="tubing" alt="tubing" title="TCD Parts tubing">Tubing</a></li>
+				<li><a href="/?page=chemical_dispensers" class="dispensers" title="TCD Parts Chemical Dispensers">Chemical Dispensers</a></li>
+				<li><a href="/?page=dishmachine_parts" class="dishmachine" title="TCD Parts Dishmachine Parts">Dishmachine Parts</a></li>
+				<li><a href="/?page=fittings_connectors" class="fittings" title="TCD Parts Fittings & Connectors">Fittings & Connectors</a></li>
+				<li><a href="/?page=valves" class="valves" title="TCD Parts Valves">Valves</a></li>
+				<li><a href="/?page=electrical_switches" class="electrical" title="TCD Parts Electrical Switches">Electrical Switches</a></li>
+				<li><a href="/?page=kitchen_equipment" class="kitchen" title="TCD Parts Kitchen Equipment">Kitchen Equipment</a></li>
+				<li><a href="/?page=racks_dollies" class="racks" title="TCD Parts Racks & Dollies">Racks & Dollies</a></li>
+				<li><a href="/?page=testing_safety" class="testing" title="TCD Parts Testing & Safety">Testing & Safety</a></li>
+
+</ul>
+<img class="live_help" src="/images/livehelp.jpg">
+			</div>
+				
+			<div id="content">	
+			
+					!{if $page_type eq 'db'}
+					!{$page_content|stripslashes}
+					!{else}
+					!{if $page_content}!{include file="$page_content"}!{/if}
+					!{/if}
+					<BR>
+						
+
+					
+			</div><!-- close content -->
+			<div id="right_side">
+						<img class="callus" src="/images/call_us.png">
+				!{include file="right_side_ads.tpl"}
+			</div>	
+				
+		</div>
+	<br clear="all">
+	<div id="footer">
+		!{if $footer}!{include file="$footer"}!{/if} 
+	</div><!-- close foot -->
+	</div> <!--close inner wrap-->
+
+ 	
+ 	</div><!-- close wrap -->
+
+</body>
+</html>

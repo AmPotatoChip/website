@@ -1,0 +1,33 @@
+body {
+font-family: arial;
+font-size: 12pt;
+background: #fff;
+margin: 0;
+}
+
+#wrap {
+width: 100%;
+margin: 0;
+padding: 0;
+float: none;
+background: #fff;
+color: #000;
+}
+
+#main {
+float: none:
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+#nav, #footer, #header, #actionline; {
+display: none;
+}
+
+#sidebar {
+float: none;
+display: none;
+margin: 0;
+padding: 0;
+}

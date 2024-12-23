@@ -1,0 +1,49 @@
+/* SEASON TICKET CSS CODE *****************************************************************/
+#giftCertificateFrm{
+	height: auto;
+	width: 500px;
+}
+
+.season_tickets ul, #giftCertificateFrm ul{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.season_tickets fieldset, #giftCertificateFrm fieldset{
+	border-bottom: 1px solid gray;
+	width:700px;
+}
+.season_tickets fieldset.height ul li{
+	margin: 10px 0px 10px 0px;
+}
+.season_tickets li, #giftCertificateFrm li{
+	list-style-type: none;
+	line-height:20px;
+	margin: 7px 0px 7px 0px;
+	clear: both;
+}
+
+.season_tickets legend, #giftCertificateFrm legend{
+	font-size:20px;
+	color:#000;
+	padding-bottom:10px;
+	padding-top:10px;
+	display:block;
+}
+
+.season_tickets fieldset label, #giftCertificateFrm fieldset label{
+	display:block;
+	width:200px;
+	float:left;
+	padding-right:5px;
+
+}
+.season_tickets fieldset.height ul li label .red{
+	color: #a41d21;
+}
+.season_tickets #chargeAmountField{
+	color:red;
+	font-weight:bold;
+}
+
+/* SEASON TICKET CSS CODE *****************************************************************/

@@ -1,0 +1,54 @@
+!{if $header}!{include file="$header"}!{/if}
+<body id="!{$content_array.config.name}!{$content_config.name}">
+
+<div id="landing_wrap">
+	<div id="inner_wrap">
+		
+		<div id="head">
+		<div id="top_line">
+		<div id="login">
+		<!-- <a href="/?page=my_account" class="login_ac" alt="Access Your Account">My Account</a>-->
+				<a href="http://cn.lazarusgroup.com/login.php" class="login" alt="Login">Login</a>
+			</div>
+			<p><span class="tag">Nature's Food Delivered</span>&nbsp;&nbsp;&nbsp;<span class="bold_cond">913-475-8004</span></p>
+			
+		</div>
+			<a href="/?page=home_landing" class="header_img" title="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"><img src="/images/logo_top.png" border="0" alt="CONVENIENTLY NATURAL MEAL DELIVERY KANSAS CITY"></a>
+		<div id="ad_div">
+		<a href="/full_content.php?article_id=128&full=yes&pbr=1"><img src="/userfiles/image/home_ad.jpg"></a>
+		</div>
+			<div id="nav">
+				!{include file="_nav.tpl"}
+			</div>
+		</div><!-- close head -->
+		
+		<div id="content-wrap">
+		
+				
+			<div id="content">	
+			
+					!{if $page_type eq 'db'}
+					!{$page_content|stripslashes}
+					!{else}
+					!{if $page_content}!{include file="$page_content"}!{/if}
+					!{/if}
+					<BR>
+		<div id="fb"><iframe frameborder="0" scrolling="no" allowtransparency="true" style="border: medium none; overflow: hidden; width: 400px; height: 350px;" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FConveniently-Natural&amp;width=400&amp;colorscheme=light&amp;show_faces=true&amp;stream=true&amp;header=true&amp;height=350"></iframe></div>
+		<div id="testimonials"><p>This is the area for Testimonials</p></div>				
+
+					
+			</div><!-- close content -->
+			
+				
+		</div>
+	<br clear="all">
+
+	</div> <!--close inner wrap-->
+	<div id="footer">
+		!{if $footer}!{include file="$footer"}!{/if} 
+	</div><!-- close foot -->
+ 	
+ 	</div><!-- close wrap -->
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<noscript>
+<meta http-equiv="REFRESH" content="0;url=http://lazarusgroup.com/?page=nojavascript">
+</noscript>
+
+<style>
+label.error{
+	display:block;
+	float:left;!important
+}
+</style>
+
+<div id="reg_form">
+
+<div id="messageText" class="messageText"></div>
+
+<form id="orderFrm" class="orderFrm" method="POST" action="/common/getfile.php" enctype="multipart/form-data">
+<fieldset>
+	<legend><span>Contact Information</span></legend>
+	<ol>
+		<li><label>First Name</label><br><input type="text" name="fname" id="fname"></li>
+		<li><label>Last Name</label><br><input type="text" name="lname" id="lname"></li>
+		<li><label>Address</label><br> <input type="text" name="address" id="address"></li>
+		<li><label>City</label> <br><input type="text" name="city" id="city"></li>
+		<li><label>State</label><br> <input type="text" name="state" id="state" maxlength="2"></li>
+		<li><label>Zipcode</label> <br><input type="text" name="zip" id="zip" maxlength="5"></li>
+		<li><label>Email</label><br><input type="text" name="email" id="email"></li>
+		<li><label>Phone</label><br><input type="text" name="phone" id="phone"></li>
+	</ol>
+</fieldset>
+
+<fieldset>
+	<legend><span>Print Size</span></legend>
+	<ol>
+		<li><label>Name of Print</label><br><input type="text" name="printname" id="printname"></li>
+		<li><label>Number of Copies</label><br>
+			<select name="copies" id="copies">
+				<option value="-">Select Number of Copies</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+			</select>	
+		</li>
+		
+		<li><label>Width</label><br>
+			<select name="width" id="width">
+				<option value="-">Select Width in Inches</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+				<option value="32">32</option>
+				<option value="33">33</option>
+				<option value="34">34</option>
+				<option value="35">35</option>
+				<option value="36">36</option>
+				<option value="37">37</option>
+				<option value="38">38</option>
+				<option value="39">39</option>
+				<option value="40">40</option>
+				<option value="41">41</option>
+				<option value="42">42</option>
+				<option value="43">43</option>
+				<option value="44">44</option>
+				<option value="45">45</option>
+				<option value="46">46</option>
+				<option value="47">47</option>
+				<option value="48">48</option>
+				<option value="49">49</option>
+				<option value="50">50</option>
+				<option value="51">51</option>
+				<option value="52">52</option>
+				<option value="53">53</option>
+				<option value="54">54</option>
+				<option value="55">55</option>
+				<option value="56">56</option>
+				<option value="57">57</option>
+				<option value="58">58</option>
+				<option value="59">59</option>
+				<option value="60">60</option>
+			</select>	
+		</li>
+		<li><label>Height</label><br>
+			<select name="height" id="height">
+				<option value="-">Select Height in Inches</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+				<option value="32">32</option>
+				<option value="33">33</option>
+				<option value="34">34</option>
+				<option value="35">35</option>
+				<option value="36">36</option>
+				<option value="37">37</option>
+				<option value="38">38</option>
+				<option value="39">39</option>
+				<option value="40">40</option>
+				<option value="41">41</option>
+				<option value="42">42</option>
+				<option value="43">43</option>
+				<option value="44">44</option>
+				<option value="45">45</option>
+				<option value="46">46</option>
+				<option value="47">47</option>
+				<option value="48">48</option>
+				<option value="49">49</option>
+				<option value="50">50</option>
+				<option value="51">51</option>
+				<option value="52">52</option>
+				<option value="53">53</option>
+				<option value="54">54</option>
+				<option value="55">55</option>
+				<option value="56">56</option>
+				<option value="57">57</option>
+				<option value="58">58</option>
+				<option value="59">59</option>
+				<option value="60">60</option>
+				<option value="61">61</option>
+				<option value="62">62</option>
+				<option value="63">63</option>
+				<option value="64">64</option>
+				<option value="65">65</option>
+				<option value="66">66</option>
+				<option value="67">67</option>
+				<option value="68">68</option>
+				<option value="69">69</option>
+				<option value="70">70</option>
+				<option value="71">71</option>
+				<option value="72">72</option>
+				<option value="73">73</option>
+				<option value="74">74</option>
+				<option value="75">75</option>
+				<option value="76">76</option>
+				<option value="77">77</option>
+				<option value="78">78</option>
+				<option value="79">79</option>
+				<option value="80">80</option>
+				<option value="81">81</option>
+				<option value="82">82</option>
+				<option value="83">83</option>
+				<option value="84">84</option>
+				<option value="85">85</option>
+				<option value="86">86</option>
+				<option value="87">87</option>
+				<option value="88">88</option>
+				<option value="89">89</option>
+				<option value="90">90</option>
+			</select>		
+		</li>
+		<li >
+		
+		
+			<label>Media</label>
+			<select name="printmedia" id="printmedia">
+				<option value="-">Select Print Media</option>
+				<option value="Alpine Smooth Archival Matte Paper 230 gsm (matte)">Alpine Smooth Archival Matte Paper 230 gsm (matte)</option>
+				<option value="Alpine 11.5 Mil ESatin Photo Paper (satin)">Alpine 11.5 Mil ESatin Photo Paper (satin)</option>
+				<option value="Alpine 10 Mil Glossy Photo Paper (glossy)">Alpine 10 Mil Glossy Photo Paper (glossy)</option>
+				<option value="Hahnemuhle Photo Rag 308 gsm (matte)">Hahnemuhle Photo Rag 308 gsm (matte)</option>
+				<option value="Hahnemuhle Albrecht Durer 210 gsm (matte)">Hahnemuhle Albrecht Durer 210 gsm (matte)</option>
+				<option value="Hahnemuhle Photo Rag Satin (satin)">Hahnemuhle Photo Rag Satin (satin)</option>
+				<option value="Hahnemuhle Fine Art Baryta 325 gsm (glossy)">Hahnemuhle Fine Art Baryta 325 gsm (glossy)</option>
+				<option value="Hahnemuhle Fine Art Baryta Satin 310 gsm (satin)">Hahnemuhle Fine Art Baryta Satin 310 gsm (satin)</option>
+				<option value="Alpine 21 Mil Premium Matte Canvas (matte)">Alpine 21 Mil Premium Matte Canvas (matte)</option>
+				<option value="Alpine 19 Mil Premium Satin Canvas (satin)">Alpine 19 Mil Premium Satin Canvas (satin)</option>
+				<option value="Alpine 21 Mil Premium Metallic Canvas (glossy)">Alpine 21 Mil Premium Metallic Canvas (glossy)</option>
+			</select>	
+
+		</li>
+		<li  style="display:none;" id="stretch"><label>Canvas Stretching</label><br>
+			<select name="canvasstretch" id="canvasstretch">
+				<option value="-" selected>Select One</option>
+				<option value="Stretch on 1.5">Yes, Stretch on 1.5" bars</option>
+				<option value="Stretch on 2">Yes, Stretch on 2" bars</option>
+				<option value="No Stretch">No</option>
+			</select>
+		</li>
+		<li><label>Select File</label><br><input type="file" name="userfile" id="userfile"></li>
+		<li><label>Comment</label><br><textarea name="comment" ></textarea></li>
+		<li><input style="float:none;" type="submit" class="submit" value="Submit"></li>
+		
+	</ol>
+</fieldset>
+<input type="hidden" name="MAX_FILE_SIZE" value="60000000">
+
+
+<input type="hidden" name="redir" id="redir" value="http://lazarusgroup.com/?page=filesubmit" />
+</form>
+</div>
+<script>
+
+</script>

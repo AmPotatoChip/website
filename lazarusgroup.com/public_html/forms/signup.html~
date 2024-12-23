@@ -1,0 +1,115 @@
+<div id="signupform">
+<script language="javascript" src="/common/validateform.js"></script>
+<form id="signupform" name="RSVP" method="POST" action="formcontrol.php" onsubmit="return validateForm(this);">
+<input type="hidden" name="subject" value="RSVP">
+<input type="hidden" name="rcpt" value="info@convenientlynatural.com">
+	<input type="hidden" name="required" value="first_name|First Name,last_name|Last Name,email|Email">
+<input type="hidden" name="redir" value="http://www.convenientlynatural.com/?page=thankyou">
+<fieldset>
+	<legend><span>Select Plan</span></legend>
+	
+	<ul>
+		<li><label>Family Plan</label> <input name="plan"     type="radio" VALUE="family_plan"></li>
+		<li><label>Couple Plan</label> <input name="plan"     type="radio" VALUE="couple_plan"></li>
+		<li><label>Individual Plan</label> <input name="plan" type="radio" VALUE="individual_plan"></li>
+		<li><label>A la Carte Plan</label> <input name="plan" type="radio" VALUE="alacarte_plan"></li>
+	</ul>
+	
+	<ul>	
+		
+		<li><label>How would you like to receive your food?</label><br>
+		<INPUT class="one" TYPE="radio" NAME="method" VALUE="pickup">Pickup
+<INPUT class="one" TYPE="radio" NAME="method" VALUE="delivery">Delivery</li>
+
+<li><label>Are you signing up for a subscription or a one time order?</label><br><INPUT class="one" TYPE="radio" NAME="frequency" VALUE="subscription">Subscription
+<INPUT class="one" TYPE="radio" NAME="frequency" VALUE="one-time">One Time</li>
+</ul>
+
+</fieldset>
+
+<fieldset>
+	<legend><span>Contact Information</span></legend>
+	<ul>
+		<li><label>Name</label> <input type="text" name="first_last_name"></li>
+		<li><label>Address</label> <input type="text" name="address"></li>
+		<li><label>Address (cont.)</label> <input type="text" name="addresscont"></li>
+		<li><label>City</label> <input type="text" name="city"></li>
+		<li><label>State</label> <input type="text" name="state"></li>
+		<li><label>Zipcode</label> <input type="text" name="zipcode"></li>
+		<li><label>Phone</label> <input type="text" name="phone"></li>
+	</ul>
+</fieldset>
+<fieldset>
+	<legend><span>Additional Info</span></legend>
+	<ul>
+<li><label>Add Allergy</label> <input type="text" name="allergy"></li>
+<li><label>How did you hear about us?</label><select name="how_did_you_hear" class="formselect">
+				<option value="none" selected="selected">Please Select a Method</option>
+					<option value="customer">Customer</option>
+					<option value="refferal">Referral</option>
+
+					<option value="postcard">Postcard</option>
+					<option value="email">Email</option>
+					<option value="newsletter">Newsletter</option>
+					<option value="Another Website">Another Website</option>
+					<option value="Search Engine">Search Engine</option>
+					<option value="magazine">Magazine</option>
+
+					<option value="other">Other</option>
+			</select></li>
+			<br clear="all">
+<li><label>Who were you referred by?</label> <input type="text" name="reference"></li>
+<br>
+			</ul>
+</fieldset>
+<fieldset>
+	<legend><span>Credit Card Information</span></legend>
+	<ol>
+		<li><label>Charge Amont $</label><span id="chargeAmountField">0.00</span> USD</li>
+		<li><label>Type of Card</label> 
+			<select name="cc_type" id="cc_type" style="float:right;">
+				<option value="" selected>Select One</option>
+				<option value="MasterCard">Mastercard</option>
+				<option value="Visa">Visa</option>
+				<option value="Discover">Discover</option>
+				<option value="AmEx">American Express</option>
+			</select>
+		</li>
+		<li><label>Name on Credit Card</label> <input type="text" name="cc_name" id="cc_name" maxlength="50" size="40"></li>
+		<li><label>Credit Card Number</label> <input type="text" name="cc_num" id="cc_num" size="20" maxlength="17"></li>
+		<li><label>Expiration Date</label>
+			<div style="float:right;"> 
+			<select name="cc_mm" id="cc_mm">
+				<option value="" selected>Month</option>
+				<option value="01">January</option>
+				<option value="02">February</option>
+				<option value="03">March</option>
+				<option value="04">April</option>
+				<option value="05">May</option>
+				<option value="06">June</option>
+				<option value="07">July</option>
+				<option value="08">August</option>
+				<option value="09">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+			</select>
+
+			<select name="cc_yy" id="cc_yy">
+				<option value="" selected>Year</option>
+				<option value="2011">2011</option>		
+				<option value="2012">2012</option>							
+				<option value="2013">2013</option>							
+				<option value="2014">2014</option>							
+				<option value="2015">2015</option>							
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>							
+			</select>
+			</div>	
+		</li>
+		<br clear="all">
+		<li><label>Security Code (CVC)</label> <input class="text" type="text" name="security_code" id="security_code" value="" size="10" maxlength="4"></li>
+	</ol>
+</fieldset>
+</form>
+</div>

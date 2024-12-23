@@ -1,0 +1,186 @@
+<form name="content_editor" method="POST" action="">
+<table border="0" cellpadding="3" cellspacing="0" id="form">
+<thead>
+	<tr>
+		<td colspan="2">Content Editor</td>
+	</tr>
+</thead>
+<tbody>
+!{if $smarty.get.article_id}
+	<tr>
+		<td id="right">Change Category:</td>
+		<td>
+		<select name="cat_id">
+		!{section name="cat" loop="$categories"}
+			<option value="!{$categories[cat]->id}" !{if $cat_id eq $categories[cat]->id}selected!{/if}>!{$categories[cat]->name}</option>
+		!{/section}
+		</select>
+		</td>
+	</tr>
+!{/if}
+
+!{if $editor_setup.set_headline eq 'true'}
+!{validate form="content_editor" field="headline" criteria="notEmpty" assign="error_headline" message="Headline is required."}
+!{if $error_headline}
+	<tr>
+		<td>&nbsp;</td>
+		<td id="red">!{$error_headline}</td>
+	</tr>
+!{/if}
+	<tr>
+		<td id="right">Headline:</td>
+		<td><input type="text" name="headline" value="!{$headline|stripslashes}" size="40" maxlength="70"></td>
+	</tr>
+!{/if}	
+!{if $editor_setup.set_subhead eq 'true'}
+!{validate form="content_editor" field="subhead" criteria="notEmpty" assign="error_subhead" message="Subhead is required."}
+!{if $error_subhead}
+	<tr>
+		<td>&nbsp;</td>
+		<td id="red">!{$error_subhead}</td>
+	</tr>
+!{/if}
+	<tr>
+		<td id="right">Subhead:</td>
+		<td><input type="text" name="subhead" value="!{$subhead}" size="40" maxlength="70"></td>
+	</tr>
+!{/if}
+!{if $editor_setup.set_exerpt eq 'true'}	
+!{validate form="content_editor" field="exerpt" criteria="notEmpty" assign="error_exerpt" message="Exerpt is required."}
+!{if $error_exerpt}
+	<tr>
+		<td>&nbsp;</td>
+		<td id="red">!{$error_exerpt}</td>
+	</tr>
+!{/if}
+!{*
+<script type="text/javascript">
+	window.onload = function(){
+		var oFCKeditor = new FCKeditor( 'exerpt' ) ;
+        oFCKeditor.BasePath = "fckeditor/" ;
+        oFCKeditor.ToolbarSet = "Basic";
+        oFCKeditor.EditorAreaCSS = "/stylesheet.css";
+        oFCKeditor.Width = '700';
+        oFCKeditor.Height = '250';
+        oFCKeditor.ReplaceTextarea() ;	
+	}
+</script>
+*}
+	<tr>
+		<td id="right" valign="top">Excerpt:</td>
+		<td><textarea id="exerpt" name="exerpt">!{$exerpt|stripslashes}</textarea></td>
+	</tr>
+<script>
+    CKEDITOR.replace( 'exerpt',{ filebrowserBrowseUrl: 'ckeditor/filemanager/index.html',
+ 	extraAllowedContent: {
+		'p' : {styles:'*',attributes:'*',classes:'*'}
+	}}
+	 );
+</script>
+!{/if}
+!{validate form="content_editor" field="full_content" criteria="notEmpty" assign="error_full_content" message="Full Content is required."}
+!{if $error_full_content}
+	<tr>
+		<td>&nbsp;</td>
+		<td id="red">!{$error_full_content}</td>
+	</tr>
+!{/if}
+	<tr>
+		<td id="right" valign="top">Full Content:</td>
+		<td>
+		<textarea id="full_content" name="full_content">!{$full_content|stripslashes}</textarea>
+	
+<script>
+
+ 	CKEDITOR.replace('full_content', 
+ 	{ filebrowserBrowseUrl: 'ckeditor/filemanager/index.html',
+ 	extraAllowedContent: {
+		'p' : {styles:'*',attributes:'*',classes:'*'}
+	}}
+ 	);
+    
+</script>
+
+		</td>
+	</tr>
+!{if $editor_setup.set_byline eq 'true'}
+!{validate form="content_editor" field="byline" criteria="notEmpty" assign="error_byline" message="Byline is required."}	
+!{if $error_byline}
+	<tr>
+		<td>&nbsp;</td>
+		<td id="red">!{$error_byline}</td>
+	</tr>
+!{/if}
+	<tr>
+		<td id="right">Byline:</td>
+		<td><input type="text" name="byline" value="!{$byline}" size="70" maxlength="120"></td>
+	</tr>
+!{/if}
+!{if $editor_setup.set_dateline eq 'true'}
+!{validate form="content_editor" field="dateline" criteria="notEmpty" assign="error_dateline" message="Dateline is required."}	
+!{if $error_dateline}
+	<tr>
+		<td>&nbsp;</td>
+		<td id="red">!{$error_dateline}</td>
+	</tr>
+!{/if}
+	<tr>
+		<td id="right">Dateline:</td>
+		<td>
+		<link rel="stylesheet" type="text/css" media="all" href="/admin/common/calendar/calendar-win2k-cold-1.css" title="win2k-cold-1" />
+		<script type="text/javascript" src="/admin/common/calendar/calendar.js"></script>
+		<script type="text/javascript" src="/admin/common/calendar/lang/calendar-en.js"></script>
+		<script type="text/javascript" src="/admin/common/calendar/calendar-setup.js"></script>
+		
+		<input type="text" name="dateline" id="dateline" size="15" value="!{$dateline|stripslashes}">
+		<button type="reset" id="trigger">...</button>
+		
+		
+		<script type="text/javascript">
+		Calendar.setup({
+			inputField     :    "dateline",      // id of the input field
+			ifFormat       :    "%Y-%m-%d",       // format of the input field
+			showsTime      :    false,            // will display a time selector
+			button         :    "trigger",   // trigger for the calendar (button ID)
+			singleClick    :    true,           // double-click mode
+			step           :    1                // show all years in drop-down boxes (instead of every other year as default)
+		});
+		</script>
+		</td>
+	</tr>
+!{/if}	
+<tr>
+	<td id="right">SEO Title:</td>
+	<td><input type="text" name="seo_title" value="!{$seo_title|stripslashes}" size="70" maxlength="120"></td>
+</tr>
+
+<tr>
+	<td id="right">SEO Keywords:</td>
+	<td><input type="text" name="seo_keywords" value="!{$seo_keywords|stripslashes}" size="70" maxlength="120"></td>
+</tr>
+
+<tr>
+	<td id="right" valign="top">SEO Description:</td>
+	<td><textarea cols="67" rows="4" name="seo_description">!{$seo_description|stripslashes}</textarea></td>
+</tr>s
+
+</tbody>
+
+<tfoot>
+	<tr>
+		<td colspan="2" align="right">
+		!{if $update}
+			<input type="hidden" name="update" value="!{$update}">
+			<input type="submit" name="submit" value="Update Article">
+		!{else}
+		<input type="submit" name="submit" value="Add Content">
+		!{/if}
+		</td>
+	</tr>
+</tfoot>
+</table>
+
+
+<input type="hidden" name="form_name" value="content">
+<input type="hidden" name="catid" value="!{$smarty.get.catid}">
+</form>
